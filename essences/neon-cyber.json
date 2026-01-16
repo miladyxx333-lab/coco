@@ -1,0 +1,257 @@
+{
+    "$schema": "https://coco.design/essence-schema.json",
+    "name": "Neon Cyber",
+    "version": "1.0.0",
+    "description": "Bold dark mode design system with neon accents. Perfect for gaming, developer tools, crypto, and tech-forward brands that want to stand out.",
+    "author": "COCO Design Systems",
+    "price": "$35",
+    "category": "tech",
+    "preview": "https://coco.design/essences/neon-cyber/preview.png",
+    "tokens": {
+        "colors": {
+            "primary": {
+                "value": "#00F0FF",
+                "description": "Neon cyan"
+            },
+            "primary-glow": {
+                "value": "rgba(0, 240, 255, 0.3)",
+                "description": "Cyan glow"
+            },
+            "secondary": {
+                "value": "#BF00FF",
+                "description": "Electric purple"
+            },
+            "secondary-glow": {
+                "value": "rgba(191, 0, 255, 0.3)",
+                "description": "Purple glow"
+            },
+            "accent": {
+                "value": "#FF00E5",
+                "description": "Hot pink"
+            },
+            "accent-alt": {
+                "value": "#00FF88",
+                "description": "Matrix green"
+            },
+            "background": {
+                "value": "#0A0A0F",
+                "description": "Deep black"
+            },
+            "surface": {
+                "value": "#12121A",
+                "description": "Card surface"
+            },
+            "surface-elevated": {
+                "value": "#1A1A24",
+                "description": "Modal surface"
+            },
+            "surface-border": {
+                "value": "#2A2A36",
+                "description": "Surface borders"
+            },
+            "text-primary": {
+                "value": "#FFFFFF",
+                "description": "Primary text"
+            },
+            "text-secondary": {
+                "value": "#A0A0B0",
+                "description": "Secondary text"
+            },
+            "text-muted": {
+                "value": "#606070",
+                "description": "Muted text"
+            },
+            "border": {
+                "value": "#2A2A36",
+                "description": "Borders"
+            },
+            "border-glow": {
+                "value": "#00F0FF",
+                "description": "Glowing borders"
+            },
+            "success": {
+                "value": "#00FF88",
+                "description": "Success green"
+            },
+            "error": {
+                "value": "#FF3366",
+                "description": "Error red"
+            },
+            "warning": {
+                "value": "#FFB800",
+                "description": "Warning yellow"
+            }
+        },
+        "typography": {
+            "display": {
+                "fontFamily": "Orbitron, sans-serif",
+                "fontSize": 64,
+                "fontWeight": 900,
+                "lineHeight": 1.1,
+                "letterSpacing": 2
+            },
+            "h1": {
+                "fontFamily": "Orbitron, sans-serif",
+                "fontSize": 48,
+                "fontWeight": 700,
+                "lineHeight": 1.2
+            },
+            "h2": {
+                "fontFamily": "Rajdhani, sans-serif",
+                "fontSize": 36,
+                "fontWeight": 700,
+                "lineHeight": 1.25
+            },
+            "h3": {
+                "fontFamily": "Rajdhani, sans-serif",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": 1.3
+            },
+            "body": {
+                "fontFamily": "Space Grotesk, sans-serif",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": 1.6
+            },
+            "body-small": {
+                "fontFamily": "Space Grotesk, sans-serif",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": 1.5
+            },
+            "mono": {
+                "fontFamily": "JetBrains Mono, monospace",
+                "fontSize": 14,
+                "fontWeight": 500,
+                "lineHeight": 1.4
+            },
+            "caption": {
+                "fontFamily": "Space Grotesk, sans-serif",
+                "fontSize": 12,
+                "fontWeight": 500,
+                "lineHeight": 1.4,
+                "letterSpacing": 0.5,
+                "textTransform": "uppercase"
+            },
+            "button": {
+                "fontFamily": "Rajdhani, sans-serif",
+                "fontSize": 16,
+                "fontWeight": 700,
+                "lineHeight": 1,
+                "letterSpacing": 1,
+                "textTransform": "uppercase"
+            }
+        },
+        "spacing": {
+            "3xs": 4,
+            "2xs": 8,
+            "xs": 12,
+            "sm": 16,
+            "md": 24,
+            "lg": 32,
+            "xl": 48,
+            "2xl": 64,
+            "3xl": 96
+        },
+        "borderRadius": {
+            "none": 0,
+            "sm": 4,
+            "md": 8,
+            "lg": 12,
+            "xl": 16,
+            "full": 9999
+        },
+        "shadows": {
+            "sm": "0 2px 4px rgba(0, 0, 0, 0.4)",
+            "md": "0 4px 8px rgba(0, 0, 0, 0.5)",
+            "lg": "0 8px 16px rgba(0, 0, 0, 0.6)",
+            "glow-cyan": "0 0 20px rgba(0, 240, 255, 0.4), 0 0 40px rgba(0, 240, 255, 0.2)",
+            "glow-purple": "0 0 20px rgba(191, 0, 255, 0.4), 0 0 40px rgba(191, 0, 255, 0.2)",
+            "glow-pink": "0 0 20px rgba(255, 0, 229, 0.4), 0 0 40px rgba(255, 0, 229, 0.2)",
+            "glow-green": "0 0 20px rgba(0, 255, 136, 0.4), 0 0 40px rgba(0, 255, 136, 0.2)"
+        },
+        "effects": {
+            "gradientCyan": "linear-gradient(135deg, #00F0FF 0%, #00A3FF 100%)",
+            "gradientPurple": "linear-gradient(135deg, #BF00FF 0%, #7000FF 100%)",
+            "gradientRainbow": "linear-gradient(90deg, #00F0FF 0%, #BF00FF 50%, #FF00E5 100%)",
+            "glassmorphism": "background: rgba(18, 18, 26, 0.8); backdrop-filter: blur(12px);",
+            "scanlines": "repeating-linear-gradient(0deg, rgba(0,0,0,0.15), rgba(0,0,0,0.15) 1px, transparent 1px, transparent 2px)"
+        }
+    },
+    "components": {
+        "button-primary": {
+            "fill": "transparent",
+            "textColor": "#00F0FF",
+            "cornerRadius": 4,
+            "padding": {
+                "x": 28,
+                "y": 14
+            },
+            "fontSize": 16,
+            "fontWeight": 700,
+            "textTransform": "uppercase",
+            "border": "2px solid #00F0FF",
+            "shadow": "0 0 20px rgba(0, 240, 255, 0.3), inset 0 0 20px rgba(0, 240, 255, 0.1)",
+            "hoverFill": "#00F0FF",
+            "hoverTextColor": "#0A0A0F"
+        },
+        "button-secondary": {
+            "fill": "transparent",
+            "textColor": "#BF00FF",
+            "cornerRadius": 4,
+            "padding": {
+                "x": 28,
+                "y": 14
+            },
+            "border": "2px solid #BF00FF",
+            "shadow": "0 0 15px rgba(191, 0, 255, 0.2)"
+        },
+        "card": {
+            "fill": "rgba(18, 18, 26, 0.8)",
+            "cornerRadius": 12,
+            "padding": 24,
+            "border": "1px solid #2A2A36",
+            "backdropFilter": "blur(12px)"
+        },
+        "input": {
+            "fill": "rgba(10, 10, 15, 0.8)",
+            "cornerRadius": 8,
+            "padding": {
+                "x": 16,
+                "y": 14
+            },
+            "border": "1px solid #2A2A36",
+            "focusBorder": "1px solid #00F0FF",
+            "focusShadow": "0 0 15px rgba(0, 240, 255, 0.2)"
+        },
+        "badge": {
+            "fill": "rgba(0, 240, 255, 0.15)",
+            "textColor": "#00F0FF",
+            "cornerRadius": 4,
+            "padding": {
+                "x": 10,
+                "y": 4
+            },
+            "border": "1px solid rgba(0, 240, 255, 0.3)"
+        }
+    },
+    "usage": {
+        "ideal_for": [
+            "Gaming platforms",
+            "Crypto/DeFi apps",
+            "Developer tools",
+            "Music/DJ software",
+            "Esports brands",
+            "VR/AR interfaces",
+            "Tech startups"
+        ],
+        "avoid_for": [
+            "Healthcare",
+            "Government services",
+            "Traditional banking",
+            "Children's products",
+            "Senior-focused apps"
+        ]
+    }
+}

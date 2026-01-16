@@ -1,0 +1,264 @@
+{
+    "$schema": "https://coco.design/essence-schema.json",
+    "name": "Fintech Trust",
+    "version": "1.0.0",
+    "description": "Professional fintech design system that builds trust and confidence. Optimized for banking, payments, investment platforms, and financial services.",
+    "author": "COCO Design Systems",
+    "price": "$39",
+    "category": "fintech",
+    "preview": "https://coco.design/essences/fintech-trust/preview.png",
+    "tokens": {
+        "colors": {
+            "primary": {
+                "value": "#0F4C81",
+                "description": "Trust blue"
+            },
+            "primary-light": {
+                "value": "#1565C0",
+                "description": "Primary light"
+            },
+            "primary-dark": {
+                "value": "#0D3F6B",
+                "description": "Primary dark"
+            },
+            "secondary": {
+                "value": "#00897B",
+                "description": "Success teal"
+            },
+            "accent": {
+                "value": "#7C4DFF",
+                "description": "Premium purple"
+            },
+            "background": {
+                "value": "#F8FAFC",
+                "description": "Light gray background"
+            },
+            "surface": {
+                "value": "#FFFFFF",
+                "description": "Card surface"
+            },
+            "surface-elevated": {
+                "value": "#FFFFFF",
+                "description": "Modal surface"
+            },
+            "text-primary": {
+                "value": "#1E293B",
+                "description": "Primary text"
+            },
+            "text-secondary": {
+                "value": "#475569",
+                "description": "Secondary text"
+            },
+            "text-muted": {
+                "value": "#94A3B8",
+                "description": "Muted text"
+            },
+            "border": {
+                "value": "#E2E8F0",
+                "description": "Borders"
+            },
+            "success": {
+                "value": "#059669",
+                "description": "Positive/profit"
+            },
+            "error": {
+                "value": "#DC2626",
+                "description": "Negative/loss"
+            },
+            "warning": {
+                "value": "#D97706",
+                "description": "Alert"
+            },
+            "info": {
+                "value": "#0284C7",
+                "description": "Information"
+            },
+            "chart-positive": {
+                "value": "#10B981",
+                "description": "Upward trends"
+            },
+            "chart-negative": {
+                "value": "#EF4444",
+                "description": "Downward trends"
+            }
+        },
+        "typography": {
+            "display": {
+                "fontFamily": "Plus Jakarta Sans, sans-serif",
+                "fontSize": 56,
+                "fontWeight": 700,
+                "lineHeight": 1.1
+            },
+            "h1": {
+                "fontFamily": "Plus Jakarta Sans, sans-serif",
+                "fontSize": 40,
+                "fontWeight": 700,
+                "lineHeight": 1.2
+            },
+            "h2": {
+                "fontFamily": "Plus Jakarta Sans, sans-serif",
+                "fontSize": 32,
+                "fontWeight": 600,
+                "lineHeight": 1.25
+            },
+            "h3": {
+                "fontFamily": "Plus Jakarta Sans, sans-serif",
+                "fontSize": 24,
+                "fontWeight": 600,
+                "lineHeight": 1.3
+            },
+            "h4": {
+                "fontFamily": "Plus Jakarta Sans, sans-serif",
+                "fontSize": 20,
+                "fontWeight": 600,
+                "lineHeight": 1.4
+            },
+            "body": {
+                "fontFamily": "Inter, sans-serif",
+                "fontSize": 16,
+                "fontWeight": 400,
+                "lineHeight": 1.6
+            },
+            "body-small": {
+                "fontFamily": "Inter, sans-serif",
+                "fontSize": 14,
+                "fontWeight": 400,
+                "lineHeight": 1.5
+            },
+            "caption": {
+                "fontFamily": "Inter, sans-serif",
+                "fontSize": 12,
+                "fontWeight": 500,
+                "lineHeight": 1.4
+            },
+            "mono": {
+                "fontFamily": "JetBrains Mono, monospace",
+                "fontSize": 14,
+                "fontWeight": 500,
+                "lineHeight": 1.4
+            },
+            "amount-large": {
+                "fontFamily": "Plus Jakarta Sans, sans-serif",
+                "fontSize": 48,
+                "fontWeight": 700,
+                "lineHeight": 1
+            },
+            "amount-medium": {
+                "fontFamily": "Plus Jakarta Sans, sans-serif",
+                "fontSize": 32,
+                "fontWeight": 600,
+                "lineHeight": 1
+            }
+        },
+        "spacing": {
+            "3xs": 4,
+            "2xs": 8,
+            "xs": 12,
+            "sm": 16,
+            "md": 24,
+            "lg": 32,
+            "xl": 48,
+            "2xl": 64,
+            "3xl": 80
+        },
+        "borderRadius": {
+            "none": 0,
+            "sm": 6,
+            "md": 8,
+            "lg": 12,
+            "xl": 16,
+            "full": 9999
+        },
+        "shadows": {
+            "sm": "0 1px 2px rgba(15, 23, 42, 0.04)",
+            "md": "0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -1px rgba(15, 23, 42, 0.04)",
+            "lg": "0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.04)",
+            "xl": "0 20px 25px -5px rgba(15, 23, 42, 0.10), 0 10px 10px -5px rgba(15, 23, 42, 0.04)",
+            "card": "0 1px 3px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04)",
+            "dropdown": "0 10px 40px rgba(15, 23, 42, 0.12)"
+        }
+    },
+    "components": {
+        "button-primary": {
+            "fill": "#0F4C81",
+            "textColor": "#FFFFFF",
+            "cornerRadius": 8,
+            "padding": {
+                "x": 24,
+                "y": 14
+            },
+            "fontSize": 15,
+            "fontWeight": 600,
+            "hoverFill": "#0D3F6B"
+        },
+        "button-secondary": {
+            "fill": "transparent",
+            "textColor": "#0F4C81",
+            "cornerRadius": 8,
+            "padding": {
+                "x": 24,
+                "y": 14
+            },
+            "border": "1.5px solid #0F4C81"
+        },
+        "card": {
+            "fill": "#FFFFFF",
+            "cornerRadius": 12,
+            "padding": 24,
+            "border": "1px solid #E2E8F0",
+            "shadow": "0 1px 3px rgba(15, 23, 42, 0.06)"
+        },
+        "stat-card": {
+            "fill": "#FFFFFF",
+            "cornerRadius": 16,
+            "padding": 24,
+            "shadow": "0 4px 6px -1px rgba(15, 23, 42, 0.06)"
+        },
+        "input": {
+            "fill": "#FFFFFF",
+            "cornerRadius": 8,
+            "padding": {
+                "x": 16,
+                "y": 14
+            },
+            "border": "1.5px solid #E2E8F0",
+            "focusBorder": "1.5px solid #0F4C81",
+            "focusShadow": "0 0 0 3px rgba(15, 76, 129, 0.1)"
+        },
+        "badge-positive": {
+            "fill": "#ECFDF5",
+            "textColor": "#059669",
+            "cornerRadius": 9999,
+            "padding": {
+                "x": 10,
+                "y": 4
+            }
+        },
+        "badge-negative": {
+            "fill": "#FEF2F2",
+            "textColor": "#DC2626",
+            "cornerRadius": 9999,
+            "padding": {
+                "x": 10,
+                "y": 4
+            }
+        }
+    },
+    "usage": {
+        "ideal_for": [
+            "Banking apps",
+            "Payment platforms",
+            "Investment dashboards",
+            "Crypto exchanges",
+            "Insurance portals",
+            "Accounting software",
+            "Financial planning"
+        ],
+        "avoid_for": [
+            "Entertainment apps",
+            "Gaming platforms",
+            "Social media",
+            "Children's education"
+        ]
+    }
+}

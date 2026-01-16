@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! — COCO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #0A0A0F;
+            color: #FAFAFA;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 24px;
+        }
+
+        .container {
+            max-width: 500px;
+        }
+
+        .icon {
+            font-size: 80px;
+            margin-bottom: 24px;
+            animation: bounce 0.6s ease-in-out;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #0052FF 0%, #00D4FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: #71717A;
+            font-size: 1.125rem;
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+
+        .links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0052FF 0%, #00D4FF 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 40px rgba(0, 82, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: #1A1A24;
+            color: #FAFAFA;
+            border: 1px solid #2A2A3A;
+        }
+
+        .btn-secondary:hover {
+            border-color: #0052FF;
+        }
+
+        .confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .confetti span {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: #0052FF;
+            animation: fall 3s ease-out forwards;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="confetti" id="confetti"></div>
+
+    <div class="container">
+        <div class="icon">💙</div>
+        <h1>Thank You!</h1>
+        <p>
+            Your support means everything to us. You're helping keep COCO
+            open source and free for everyone. We'll add your name to our
+            CREDITS.md file soon!
+        </p>
+
+        <div class="links">
+            <a href="/" class="btn-primary">
+                ← Back to COCO
+            </a>
+            <a href="https://github.com/miladyxx333-lab/coco" class="btn-secondary">
+                ⭐ Star on GitHub
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Confetti effect
+        const confettiContainer = document.getElementById('confetti');
+        const colors = ['#0052FF', '#00D4FF', '#00F0FF', '#10B981', '#F59E0B'];
+
+        for (let i = 0; i < 50; i++) {
+            const span = document.createElement('span');
+            span.style.left = Math.random() * 100 + '%';
+            span.style.top = -20 + 'px';
+            span.style.background = colors[Math.floor(Math.random() * colors.length)];
+            span.style.animationDelay = Math.random() * 2 + 's';
+            span.style.animationDuration = (2 + Math.random() * 2) + 's';
+            confettiContainer.appendChild(span);
+        }
+    </script>
+</body>
+
+</html>

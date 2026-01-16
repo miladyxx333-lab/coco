@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+landing/node_modules/
+
+# Environment variables (NEVER commit secrets)
+.env
+
+# Output files
+output/
+vision-reports/
+
+# OS files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/

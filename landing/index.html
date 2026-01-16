@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>COCO — AI-Powered Design Infrastructure</title>
+  <meta name="description"
+    content="Open source design orchestration engine. Transform ideas into production-ready design tokens, Figma components, and Tailwind code.">
+  <meta name="keywords" content="design system, figma, tailwind, design tokens, AI design, open source">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="COCO — AI-Powered Design Infrastructure">
+  <meta property="og:description"
+    content="Open source design orchestration engine. Ship pixel-perfect products faster.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="COCO — AI-Powered Design Infrastructure">
+  <meta name="twitter:description" content="Open source design orchestration engine.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">COCO</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it Works</a>
+        <a href="#community">Community</a>
+        <a href="https://github.com/miladyxx333-lab/coco" target="_blank" class="nav-github">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Open Source & Free Forever
+    </div>
+
+    <h1 class="hero-title">
+      Design Infrastructure<br>
+      <span class="gradient-text">Powered by AI</span>
+    </h1>
+
+    <p class="hero-subtitle">
+      COCO is an open source design orchestration engine that transforms ideas
+      into production-ready design tokens, Figma components, and Tailwind code.
+      <strong>Ship pixel-perfect products faster.</strong>
+    </p>
+
+    <div class="hero-cta">
+      <a href="https://github.com/miladyxx333-lab/coco" class="btn btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        View on GitHub
+      </a>
+      <a href="#donate" class="btn btn-secondary">
+        ♥ Support the Project
+      </a>
+    </div>
+
+    <!-- Terminal Demo -->
+    <div class="terminal">
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="terminal-title">COCO Terminal</span>
+      </div>
+      <div class="terminal-body">
+        <pre><code><span class="terminal-prompt">$</span> <span class="terminal-command">coco</span> <span class="terminal-string">"Dashboard for fintech app, dark mode, minimal"</span>
+
+<span class="terminal-status">[STATUS: ANALYZING]</span>
+
+<span class="terminal-dim">◉ COCO_THOUGHT:</span> Detected product type: <span class="terminal-accent">FINTECH</span>
+<span class="terminal-dim">  └─</span> Applying trust-blue palette + geometric typography
+
+<span class="terminal-status">[STATUS: DRAFTING]</span>
+
+<span class="terminal-output">{
+  "tokens": {
+    "colors.primary": "#0052FF",
+    "colors.background": "#18181B",
+    "spacing.unit": 8,
+    "radius.default": 12
+  }
+}</span>
+
+<span class="terminal-success">✓ tailwind.config.js generated</span>
+<span class="terminal-success">✓ design-tokens.css generated</span>
+<span class="terminal-success">✓ figma-variables.json generated</span>
+
+<span class="terminal-metrics">Accessibility: WCAG AA | Contrast: 8.2:1 | Consistency: 100%</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="section-header">
+      <h2 class="section-title">Everything You Need to Ship</h2>
+      <p class="section-subtitle">
+        A complete toolkit for design-to-code workflows
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🧠</div>
+        <h3>AI-Powered Analysis</h3>
+        <p>Describe your product in natural language. COCO understands context, industry verticals, and design
+          psychology to generate informed decisions.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🎨</div>
+        <h3>Design Token Generation</h3>
+        <p>Automatic generation of colors, spacing, typography, and shadows. Exports to Tailwind, CSS Variables, Style
+          Dictionary, and Figma Variables.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">📐</div>
+        <h3>Figma Integration</h3>
+        <p>Generate Figma plugin code and export designs directly. Visual regression testing ensures your code matches
+          the design.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🔍</div>
+        <h3>Visual Regression Testing</h3>
+        <p>Compare Figma designs against rendered code. Pixel-perfect validation with AI-powered semantic analysis.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🌊</div>
+        <h3>Multi-Channel Sync</h3>
+        <p>Webhooks for GitHub, Figma, Notion, and Slack. COCO watches your workflow and catches design inconsistencies.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Keyboard-First CLI</h3>
+        <p>Power user experience with a terminal interface. No GUI needed. Works in your existing workflow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="section-header">
+      <h2 class="section-title">How COCO Works</h2>
+      <p class="section-subtitle">
+        Three layers of intelligence working together
+      </p>
+    </div>
+
+    <div class="architecture">
+      <div class="arch-layer">
+        <div class="arch-number">01</div>
+        <div class="arch-content">
+          <h3>Sensory Layer</h3>
+          <p>Ingests context from Figma files, existing codebase, user feedback, and analytics data.</p>
+          <div class="arch-tags">
+            <span class="tag">Figma API</span>
+            <span class="tag">GitHub Sync</span>
+            <span class="tag">Analytics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="arch-connector"></div>
+
+      <div class="arch-layer">
+        <div class="arch-number">02</div>
+        <div class="arch-content">
+          <h3>Agentic Core</h3>
+          <p>State machine with design heuristics, psychology patterns, and WCAG accessibility rules.</p>
+          <div class="arch-tags">
+            <span class="tag">Gemini AI</span>
+            <span class="tag">Design Psychology</span>
+            <span class="tag">Self-Healing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="arch-connector"></div>
+
+      <div class="arch-layer">
+        <div class="arch-number">03</div>
+        <div class="arch-content">
+          <h3>Executive Layer</h3>
+          <p>Generates production-ready files, creates PRs, and updates Figma designs automatically.</p>
+          <div class="arch-tags">
+            <span class="tag">Tailwind</span>
+            <span class="tag">CSS Variables</span>
+            <span class="tag">React Components</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Essences Section -->
+  <section class="essences">
+    <div class="section-header">
+      <h2 class="section-title">Design Essences</h2>
+      <p class="section-subtitle">
+        Pre-built token libraries for different industries
+      </p>
+    </div>
+
+    <div class="essences-grid">
+      <div class="essence-card essence-luxury">
+        <div class="essence-preview">
+          <div class="preview-colors">
+            <span style="background: #1C1C1C"></span>
+            <span style="background: #B8860B"></span>
+            <span style="background: #FAFAFA"></span>
+          </div>
+        </div>
+        <div class="essence-info">
+          <h4>Luxury Gold</h4>
+          <p>Fashion, jewelry, premium brands</p>
+          <span class="essence-status">Included</span>
+        </div>
+      </div>
+
+      <div class="essence-card essence-fintech">
+        <div class="essence-preview">
+          <div class="preview-colors">
+            <span style="background: #0F4C81"></span>
+            <span style="background: #10B981"></span>
+            <span style="background: #F8FAFC"></span>
+          </div>
+        </div>
+        <div class="essence-info">
+          <h4>Fintech Trust</h4>
+          <p>Banking, payments, investment</p>
+          <span class="essence-status">Included</span>
+        </div>
+      </div>
+
+      <div class="essence-card essence-cyber">
+        <div class="essence-preview">
+          <div class="preview-colors">
+            <span style="background: #0A0A0F"></span>
+            <span style="background: #00F0FF"></span>
+            <span style="background: #FF00FF"></span>
+          </div>
+        </div>
+        <div class="essence-info">
+          <h4>Neon Cyber</h4>
+          <p>Gaming, crypto, developer tools</p>
+          <span class="essence-status">Included</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Section -->
+  <section id="community" class="community">
+    <div class="section-header">
+      <h2 class="section-title">Join the Community</h2>
+      <p class="section-subtitle">
+        COCO is built in the open. Contributions welcome.
+      </p>
+    </div>
+
+    <div class="community-stats">
+      <div class="stat">
+        <div class="stat-value">MIT</div>
+        <div class="stat-label">License</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">5+</div>
+        <div class="stat-label">Modules</div>
+      </div>
+      <div class="stat">
+        <div class="stat-value">10+</div>
+        <div class="stat-label">Formats</div>
+      </div>
+    </div>
+
+    <div class="community-links">
+      <a href="https://github.com/miladyxx333-lab/coco" class="community-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+        </svg>
+        Star on GitHub
+      </a>
+      <a href="https://opensea.io/es/collection/spotpunk" class="community-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M12 0C5.374 0 0 5.374 0 12s5.374 12 12 12 12-5.374 12-12S18.629 0 12 0ZM5.92 12.403l.051-.081 3.123-4.884a.107.107 0 0 1 .187.014c.52 1.169.972 2.623.76 3.528-.088.372-.335.876-.614 1.342a2.405 2.405 0 0 1-.117.199.106.106 0 0 1-.09.045H6.013a.106.106 0 0 1-.091-.163zm13.914 1.68a.109.109 0 0 1-.065.101c-.243.103-1.07.485-1.414.962-.878 1.222-1.548 2.97-3.048 2.97H9.053a4.019 4.019 0 0 1-4.013-4.028v-.072c0-.058.048-.106.108-.106h3.485c.07 0 .12.063.115.132-.026.226.017.459.125.67.206.42.636.682 1.099.682h1.726v-1.347H9.99a.11.11 0 0 1-.089-.173l.063-.09c.16-.231.391-.586.621-.992.156-.274.308-.566.43-.86.024-.052.043-.107.063-.16.033-.094.067-.182.091-.269a4.57 4.57 0 0 0 .065-.223c.057-.25.081-.514.081-.787 0-.108-.004-.221-.014-.327-.005-.117-.02-.235-.034-.352a3.415 3.415 0 0 0-.048-.312 6.494 6.494 0 0 0-.098-.468l-.014-.06c-.03-.108-.056-.21-.092-.317a17.717 17.717 0 0 0-.328-.972 5.115 5.115 0 0 0-.142-.355c-.072-.178-.146-.339-.213-.49a3.404 3.404 0 0 1-.094-.197 4.073 4.073 0 0 0-.118-.26c-.035-.074-.069-.137-.1-.202l-.092-.164a.506.506 0 0 1 .075-.56l.046-.043h2.561v1.304h-1.74l-.034.056.029.052.087.156c.082.151.205.402.328.705.043.103.087.209.132.317.053.126.112.265.16.408.048.143.096.274.134.41.043.16.082.317.101.478.024.178.034.356.029.531a2.46 2.46 0 0 1-.038.378c-.019.1-.048.202-.077.307a4.18 4.18 0 0 1-.115.356 8.786 8.786 0 0 1-.136.326 7.636 7.636 0 0 1-.373.696 5.173 5.173 0 0 1-.139.223c-.048.072-.096.146-.149.217a3.15 3.15 0 0 1-.134.178c-.048.063-.096.126-.149.185-.077.089-.158.173-.234.259a3.63 3.63 0 0 1-.206.202c-.048.048-.096.1-.149.147l-.096.087a.216.216 0 0 1-.137.053h-1.052v1.347h1.322c.295 0 .576-.104.801-.298.077-.067.305-.265.592-.596.01-.012.024-.024.038-.03l2.474-.715a.11.11 0 0 1 .139.1v.627c0 .039-.019.076-.053.098l-.127.091Z" />
+        </svg>
+        SpotPunk NFTs
+      </a>
+      <a href="https://x.com/CoyotlCompany" class="community-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+        </svg>
+        Follow Updates
+      </a>
+    </div>
+  </section>
+
+  <!-- Donate Section -->
+  <section id="donate" class="donate">
+    <div class="donate-container">
+      <div class="donate-icon">♥</div>
+      <h2 class="donate-title">Support COCO Development</h2>
+      <p class="donate-text">
+        COCO is free and open source. If it saves you time, consider supporting
+        continued development. Every contribution helps keep the project alive.
+      </p>
+
+      <div class="donate-options">
+        <a href="https://github.com/sponsors/miladyxx333-lab" class="donate-btn donate-github">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+          </svg>
+          GitHub Sponsors
+        </a>
+
+        <a href="https://opensea.io/es/collection/spotpunk" class="donate-btn donate-spotpunk">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 0C5.374 0 0 5.374 0 12s5.374 12 12 12 12-5.374 12-12S18.629 0 12 0ZM5.92 12.403l.051-.081 3.123-4.884a.107.107 0 0 1 .187.014c.52 1.169.972 2.623.76 3.528-.088.372-.335.876-.614 1.342a2.405 2.405 0 0 1-.117.199.106.106 0 0 1-.09.045H6.013a.106.106 0 0 1-.091-.163z" />
+          </svg>
+          Buy Me a SpotPunk
+        </a>
+
+        <a href="https://www.patreon.com/c/coyotlcompany" class="donate-btn donate-patreon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M15.386.524c-4.764 0-8.64 3.876-8.64 8.64 0 4.75 3.876 8.613 8.64 8.613 4.75 0 8.614-3.864 8.614-8.613C24 4.4 20.136.524 15.386.524zM.003 23.537h4.22V.524H.003z" />
+          </svg>
+          Become a Patron
+        </a>
+      </div>
+
+      <div class="sponsor-tiers">
+        <div class="tier tier-clickable" onclick="donate('supporter')">
+          <div class="tier-price">$5<span>/mo</span></div>
+          <div class="tier-name">Supporter</div>
+          <p>Name in CREDITS.md</p>
+          <button class="tier-btn">Subscribe</button>
+        </div>
+        <div class="tier tier-popular tier-clickable" onclick="donate('backer')">
+          <div class="tier-badge">Most Popular</div>
+          <div class="tier-price">$20<span>/mo</span></div>
+          <div class="tier-name">Backer</div>
+          <p>Logo on GitHub README + priority support</p>
+          <button class="tier-btn">Subscribe</button>
+        </div>
+        <div class="tier tier-clickable" onclick="donate('sponsor')">
+          <div class="tier-price">$100<span>/mo</span></div>
+          <div class="tier-name">Sponsor</div>
+          <p>Logo on landing page + feature requests</p>
+          <button class="tier-btn">Subscribe</button>
+        </div>
+      </div>
+
+      <!-- One-time donations -->
+      <div class="one-time-section">
+        <h3>Or make a one-time donation</h3>
+        <div class="one-time-options">
+          <button class="one-time-btn" onclick="donate('one-time-5')">$5</button>
+          <button class="one-time-btn" onclick="donate('one-time-20')">$20</button>
+          <button class="one-time-btn" onclick="donate('one-time-50')">$50</button>
+          <div class="custom-amount">
+            <input type="number" id="customAmount" placeholder="Custom $" min="1" step="1">
+            <button class="one-time-btn custom-btn" onclick="donateCustom()">Donate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">COCO</span>
+        <p>Elegance through Automated Intelligence</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>Project</h4>
+          <a href="https://github.com/miladyxx333-lab/coco">GitHub</a>
+          <a href="https://github.com/miladyxx333-lab/coco/blob/main/README.md">Documentation</a>
+          <a href="https://github.com/miladyxx333-lab/coco/releases">Changelog</a>
+        </div>
+        <div class="footer-column">
+          <h4>Community</h4>
+          <a href="https://opensea.io/es/collection/spotpunk">SpotPunk NFTs</a>
+          <a href="https://x.com/CoyotlCompany">Twitter</a>
+          <a href="https://github.com/miladyxx333-lab/coco/discussions">Discussions</a>
+        </div>
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="https://github.com/sponsors/miladyxx333-lab">GitHub Sponsors</a>
+          <a href="https://opensea.io/es/collection/spotpunk">SpotPunk NFTs</a>
+          <a href="https://www.patreon.com/c/coyotlcompany">Patreon</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>MIT License © 2024 COCO Contributors</p>
+      <p>Made with ♥ for the design community</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
