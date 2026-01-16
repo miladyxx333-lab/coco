@@ -60,7 +60,32 @@ export type ComponentType = z.infer<typeof ComponentTypeSchema>;
 // BASE WIREFRAME NODE
 // ============================================
 
-export const WireframeNodeSchema = z.object({
+// Define the type first for the recursive schema
+export interface WireframeNode {
+    id: string;
+    type: ComponentType;
+    name: string;
+    position: { x: number; y: number };
+    dimensions: { width: number; height: number };
+    fill?: string;
+    stroke?: string;
+    strokeWidth?: number;
+    cornerRadius?: number | { topLeft?: number; topRight?: number; bottomRight?: number; bottomLeft?: number };
+    opacity?: number;
+    text?: string;
+    fontSize?: number;
+    fontWeight?: 'regular' | 'medium' | 'semibold' | 'bold';
+    textAlign?: 'left' | 'center' | 'right';
+    textColor?: string;
+    layoutMode?: 'none' | 'horizontal' | 'vertical';
+    padding?: number;
+    gap?: number;
+    children?: WireframeNode[];
+    annotations?: string[];
+    semanticRole?: string;
+}
+
+export const WireframeNodeSchema: z.ZodType<WireframeNode> = z.object({
     id: z.string(),
     type: ComponentTypeSchema,
     name: z.string(),
@@ -87,14 +112,12 @@ export const WireframeNodeSchema = z.object({
     gap: z.number().optional(),
 
     // Hierarchy
-    children: z.array(z.lazy(() => WireframeNodeSchema)).optional(),
+    children: z.array(z.lazy((): z.ZodType<WireframeNode> => WireframeNodeSchema)).optional(),
 
     // Metadata
     annotations: z.array(z.string()).optional(),
     semanticRole: z.string().optional(), // For accessibility hints
 });
-
-export type WireframeNode = z.infer<typeof WireframeNodeSchema>;
 
 // ============================================
 // FULL WIREFRAME STRUCTURE
